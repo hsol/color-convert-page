@@ -44,8 +44,7 @@ window.onload = function (event) {
 					for (var idx in inputs) {
 						var input = inputs[idx];
 						if (isElement(input) && !isNaN(idx)) {
-							if (input.value != "")
-								code.push(parseInt(input.value));
+							code.push(parseInt(input.value || 0));
 						}
 					}
 				} else {
@@ -78,8 +77,7 @@ window.onload = function (event) {
 			for (var idx in inputs) {
 				var input = inputs[idx];
 				if (isElement(input) && !isNaN(idx)) {
-					if (input.value != "")
-						code.push(parseInt(input.value));
+					code.push(parseInt(input.value || 0));
 				}
 			}
 		} else {
@@ -122,8 +120,7 @@ window.onload = function (event) {
 					for (var input_idx in inputs) {
 						var input = inputs[input_idx];
 						if (isElement(input) && !isNaN(input_idx)) {
-							if (input.value != "")
-								code.push(parseInt(input.value));
+							code.push(parseInt(input.value || 0));
 						}
 					}
 				} else {
